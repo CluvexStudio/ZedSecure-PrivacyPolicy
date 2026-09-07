@@ -1,324 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for ZedSecure VPN - A privacy-first VPN client that doesn't collect any personal data">
-    <meta name="keywords" content="privacy policy, VPN, ZedSecure, data protection, privacy">
-    <title>Privacy Policy - ZedSecure VPN</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-            line-height: 1.7;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 25px 70px rgba(0,0,0,0.3);
-        }
-        
-        header {
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
-        
-        h1 {
-            color: #667eea;
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .last-updated {
-            color: #7f8c8d;
-            font-size: 0.95em;
-            font-style: italic;
-        }
-        
-        .tldr {
-            background: linear-gradient(135deg, #667eea15, #764ba215);
-            padding: 25px;
-            border-radius: 12px;
-            border-left: 5px solid #667eea;
-            margin: 30px 0;
-            font-size: 1.05em;
-        }
-        
-        .tldr strong {
-            color: #667eea;
-            font-size: 1.1em;
-        }
-        
-        h2 {
-            color: #764ba2;
-            font-size: 1.6em;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        
-        li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-        
-        strong {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        .summary-box {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 40px 0;
-            border: 2px solid #e9ecef;
-        }
-        
-        .summary-box h3 {
-            color: #667eea;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        
-        .summary-box ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .summary-box li {
-            padding-left: 30px;
-            position: relative;
-            margin-bottom: 12px;
-        }
-        
-        .summary-box li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #27ae60;
-            font-weight: bold;
-            font-size: 1.3em;
-        }
-        
-        .contact-box {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-top: 40px;
-        }
-        
-        .contact-box h2 {
-            color: white;
-            margin-top: 0;
-        }
-        
-        .contact-box a {
-            color: white;
-            text-decoration: underline;
-            font-weight: 500;
-        }
-        
-        .contact-box a:hover {
-            opacity: 0.8;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #e9ecef;
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 2.2em;
-            }
-            
-            h2 {
-                font-size: 1.4em;
-            }
-            
-            body {
-                padding: 10px;
-            }
-        }
-        
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-                padding: 20px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Policy and Terms of Service for ZedSecure VPN — a VPN client with no account, no backend and no analytics.">
+<meta name="color-scheme" content="dark light">
+<title>Privacy Policy &amp; Terms — ZedSecure VPN</title>
+<style>
+  :root{
+    --bg:#0b0d14; --panel:#12151f; --panel-2:#171b28; --line:#242a3d;
+    --fg:#e8eaf2; --muted:#a6adc4; --accent:#a78bfa; --accent-2:#7dd3fc; --warn:#fbbf24;
+    --radius:16px; --max:880px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f7fb; --panel:#ffffff; --panel-2:#f1f3f9; --line:#e2e6f0;
+           --fg:#161a24; --muted:#5b6376; --accent:#6d4aff; --accent-2:#0369a1; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--fg);line-height:1.75;
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,"Helvetica Neue",Arial,sans-serif;
+       padding:28px 18px 80px;-webkit-text-size-adjust:100%}
+  .wrap{max-width:var(--max);margin:0 auto}
+  header{padding:26px 0 22px;border-bottom:1px solid var(--line);margin-bottom:26px}
+  .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem}
+  h1{font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.2;margin:.35em 0 .25em;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:1rem}
+  .meta{color:var(--muted);font-size:.86rem;margin-top:14px}
+  h2{font-size:1.32rem;margin:2.1em 0 .55em;letter-spacing:-.01em;scroll-margin-top:20px}
+  h3{font-size:1.02rem;margin:1.5em 0 .4em;color:var(--fg)}
+  p,li{color:var(--fg)}
+  p{margin:.7em 0}
+  ul,ol{margin:.6em 0 .6em 1.25em}
+  li{margin:.34em 0}
+  a{color:var(--accent-2);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:currentColor}
+  code{background:var(--panel-2);border:1px solid var(--line);border-radius:6px;
+       padding:.08em .42em;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:18px 0}
+  .card.hi{border-color:var(--accent);background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 9%,var(--panel)),var(--panel))}
+  .card h3:first-child{margin-top:0}
+  .toc{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:22px 0}
+  .toc ol{margin:.3em 0 .1em 1.2em}
+  .toc a{color:var(--fg)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.94rem;display:block;overflow-x:auto}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+  th{background:var(--panel-2);font-weight:650}
+  .tag{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.04em;
+       padding:.16em .6em;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .tag.no{color:#34d399;border-color:#34d39955}
+  .tag.yes{color:var(--warn);border-color:#fbbf2455}
+  footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  hr{border:0;border-top:1px solid var(--line);margin:44px 0}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: April 22, 2026</p>
-        </header>
-        
-        <div class="tldr">
-            <strong>TL;DR (Too Long; Didn't Read):</strong><br>
-            ZedSecure VPN does NOT collect, store, or transmit any personal information. Everything stays on your device. We have zero access to your data. No tracking, no analytics, no third parties. Your privacy is 100% protected.
-        </div>
-        
-        <h2>1. Information We Collect</h2>
-        <p>ZedSecure VPN is designed with privacy as our top priority. We do <strong>NOT</strong> collect, store, or transmit any personal information to our servers or any third parties. All data remains exclusively on your device. We have no servers that collect user data, and we have no way to access your information.</p>
-        
-        <h2>2. Data Storage</h2>
-        <p>All VPN configurations, server settings, connection preferences, and app data are stored locally on your device using encrypted storage (MMKV). We have absolutely no access to this data, and it never leaves your device. You maintain complete control and ownership of all your data.</p>
-        
-        <h2>3. Network Connections</h2>
-        <p>When you connect to a VPN server:</p>
-        <ul>
-            <li>Your internet traffic is routed through the VPN server you configure</li>
-            <li>We do not operate or control any VPN servers</li>
-            <li>We do not log, monitor, or track your browsing activity</li>
-            <li>Connection data remains exclusively between you and your configured server</li>
-            <li>No connection logs or usage statistics are collected by us</li>
-            <li>We cannot see what websites you visit or what data you transmit</li>
-        </ul>
-        
-        <h2>4. Permissions</h2>
-        <p>ZedSecure requires the following Android permissions to function:</p>
-        <ul>
-            <li><strong>VPN Permission:</strong> Required to establish VPN connections and route your internet traffic securely</li>
-            <li><strong>Network State Access:</strong> To check your internet connectivity status and display connection information</li>
-            <li><strong>Camera (Optional):</strong> Only used for QR code scanning when you choose to import configurations via QR code</li>
-            <li><strong>Storage (Optional):</strong> Only used when you explicitly choose to import or export configuration files</li>
-        </ul>
-        <p>These permissions are used solely for app functionality and are <strong>never</strong> used for data collection, tracking, analytics, or any other purpose beyond the stated functionality.</p>
-        
-        <h2>5. Third-Party Services</h2>
-        <p>ZedSecure does not integrate with any third-party services whatsoever, including:</p>
-        <ul>
-            <li>No analytics services (Google Analytics, Firebase Analytics, etc.)</li>
-            <li>No crash reporting services</li>
-            <li>No advertising networks or ad trackers</li>
-            <li>No social media integrations</li>
-            <li>No cloud services or remote servers</li>
-            <li>No data brokers or marketing platforms</li>
-        </ul>
-        <p>The app is completely standalone and self-contained. Your data never touches any third-party service.</p>
-        
-        <h2>6. Device Information</h2>
-        <p>The app may access your Android device ID only for local device identification purposes. This information:</p>
-        <ul>
-            <li>Remains exclusively on your device</li>
-            <li>Is only used for local app functionality</li>
-            <li>Is never transmitted to any external servers or services</li>
-            <li>Can be viewed in the app Settings at any time</li>
-            <li>Is not shared with any third parties</li>
-        </ul>
-        
-        <h2>7. Data Security</h2>
-        <p>We implement industry-standard security measures to protect your data:</p>
-        <ul>
-            <li>AES-256 encryption for sensitive data storage</li>
-            <li>Secure local storage with encryption at rest</li>
-            <li>No cloud synchronization or backup to external servers</li>
-            <li>No remote access capabilities or backdoors</li>
-            <li>All cryptographic operations performed locally on your device</li>
-            <li>Regular security updates and patches</li>
-        </ul>
-        
-        <h2>8. Children's Privacy</h2>
-        <p>ZedSecure does not knowingly collect any information from children under the age of 13 (or the applicable age of digital consent in your jurisdiction). The app is intended for general audiences and does not contain age-restricted content. Since we don't collect any data from anyone, this extends to children as well.</p>
-        
-        <h2>9. International Data Transfers</h2>
-        <p>Since ZedSecure does not collect, store, or transmit any user data to any servers, there are no international data transfers. All data remains on your local device regardless of your geographic location. Your data never crosses any borders.</p>
-        
-        <h2>10. Data Retention</h2>
-        <p>We do not retain any user data because we do not collect any user data. All information stored by the app remains on your device and is under your complete control. You can delete all app data at any time by uninstalling the application.</p>
-        
-        <h2>11. Changes to Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or for other operational reasons. Any changes will be reflected in the app with an updated "Last updated" date at the top of this policy. We encourage you to review this policy periodically. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
-        
-        <h2>12. Your Rights and Control</h2>
-        <p>Since all data is stored locally on your device, you have complete control over your information:</p>
-        <ul>
-            <li>Full access to all your data at any time through the app</li>
-            <li>Ability to export your configurations whenever you want</li>
-            <li>Complete data deletion by simply uninstalling the app</li>
-            <li>No need for data deletion requests since we don't store your data on our servers</li>
-            <li>No account creation or registration required</li>
-            <li>No email verification or personal information needed</li>
-            <li>Complete anonymity - we don't know who you are</li>
-        </ul>
-        
-        <h2>13. Legal Compliance</h2>
-        <p>ZedSecure is designed to comply with major privacy regulations including GDPR (General Data Protection Regulation), CCPA (California Consumer Privacy Act), and other international privacy laws. Since we don't collect any personal data, most data protection obligations don't apply to our service.</p>
-        
-        <div class="summary-box">
-            <h3>Privacy Summary</h3>
-            <p><strong>ZedSecure is a privacy-first VPN client that:</strong></p>
-            <ul>
-                <li>Does NOT collect any personal information</li>
-                <li>Does NOT track your online activity or browsing history</li>
-                <li>Does NOT share any data with third parties</li>
-                <li>Does NOT use analytics, advertisements, or tracking services</li>
-                <li>Stores everything locally on your device with encryption</li>
-                <li>Gives you complete control and ownership of your data</li>
-                <li>Operates completely offline (except for VPN connections you initiate)</li>
-                <li>Requires no account, registration, or personal information</li>
-                <li>Has no servers that collect or store user data</li>
-                <li>Cannot access your data even if we wanted to</li>
-            </ul>
-        </div>
-        
-        <div class="contact-box">
-            <h2>Contact Information</h2>
-            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
-            <p>
-                <strong>GitHub:</strong> <a href="https://github.com/CluvexStudio" target="_blank" rel="noopener">https://github.com/CluvexStudio</a><br>
-                <strong>Email:</strong> <a href="mailto:cluvexdev@gmail.com">cluvexdev@gmail.com</a>
-            </p>
-            <p>We will respond to all legitimate inquiries within a reasonable timeframe (typically within 48-72 hours).</p>
-        </div>
-        
-        <footer>
-            <p><strong>ZedSecure VPN</strong> - Your Privacy, Your Control</p>
-            <p>© 2026 CluvexStudio. All rights reserved.</p>
-        </footer>
-    </div>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">ZedSecure VPN</div>
+  <h1>Privacy Policy &amp; Terms of Service</h1>
+  <p class="sub">ZedSecure is a VPN <em>client</em>. It has no user account, no backend server of ours, and no analytics.</p>
+  <p class="meta">
+    Application ID <code>com.zedsecure.vpn</code> &nbsp;·&nbsp;
+    Publisher: Cluvex Studio &nbsp;·&nbsp;
+    Effective: 7 September 2026 &nbsp;·&nbsp; Last updated: 7 September 2026
+  </p>
+</header>
+
+<div class="card hi">
+  <h3>The short version</h3>
+  <ul>
+    <li><strong>We run no servers and operate no VPN service.</strong> You supply the servers, subscriptions or providers you connect through. Your traffic goes to <em>them</em>, never to us.</li>
+    <li><strong>There is no account, no sign-up and no backend of ours.</strong> The app never sends your configurations, credentials, browsing activity or identifiers to Cluvex Studio.</li>
+    <li><strong>No analytics, no telemetry, no crash reporting, no advertising, no tracking SDKs.</strong> None are present in the app.</li>
+    <li><strong>Your data stays on your device</strong>, in the app's private storage.</li>
+    <li>Some optional features contact third parties (for example an IP-location lookup, a speed test or a routing-rules download). Those are listed in full in <a href="#third-parties">§4</a>, and each one necessarily sees your IP address.</li>
+  </ul>
+</div>
+
+<div class="toc">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#who">Who we are and what this covers</a></li>
+    <li><a href="#ondevice">What the app stores on your device</a></li>
+    <li><a href="#notcollected">What we do not collect</a></li>
+    <li><a href="#third-parties">What leaves your device, and to whom</a></li>
+    <li><a href="#permissions">Permissions and why each is needed</a></li>
+    <li><a href="#deviceid">Device identifier</a></li>
+    <li><a href="#security">Security, and its honest limits</a></li>
+    <li><a href="#children">Children</a></li>
+    <li><a href="#rights">Your choices and rights</a></li>
+    <li><a href="#changes">Changes to this policy</a></li>
+    <li><a href="#terms">Terms of Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+<h2 id="who">1. Who we are and what this covers</h2>
+<p>ZedSecure VPN ("the app") is published by <strong>Cluvex Studio</strong> ("we", "us"). This document covers the ZedSecure VPN Android application distributed under the application ID <code>com.zedsecure.vpn</code>.</p>
+<p><strong>ZedSecure is a client, not a VPN service.</strong> It does not include, bundle or sell access to any VPN server. It connects to servers, subscriptions and providers that <em>you</em> add — a configuration link you paste, a subscription URL you enter, a corporate gateway you configure, or a public network such as Tor or Psiphon that you choose to use. We have no visibility into, and no control over, any of them.</p>
+<p>Because there is no account and no server of ours, there is no database in which your use of the app could be recorded.</p>
+
+<h2 id="ondevice">2. What the app stores on your device</h2>
+<p>All of the following is written to the app's private storage on your device. It is not transmitted to us, and it is removed when you uninstall the app.</p>
+<ul>
+  <li><strong>Server configurations and credentials</strong> you add — including passwords, private keys, pre-shared keys and certificates. Vault (<code>.zsx</code>) configurations are stored encrypted with AES-256-GCM.</li>
+  <li><strong>Subscription URLs</strong> you enter, and the configurations fetched from them.</li>
+  <li><strong>App settings</strong>: routing rules, DNS choices, per-app selections, appearance and personalisation.</li>
+  <li><strong>Connection statistics</strong>: bytes sent and received, connection duration and measured latency, kept per profile so the app can show them.</li>
+  <li><strong>Diagnostic logs</strong>, shown in the app's log screen. They are kept in memory and in the app's own files, are never uploaded automatically, and are shared only if you choose to copy or share them yourself. Logs can contain server addresses and connection errors, so review them before sharing.</li>
+</ul>
+
+<h2 id="notcollected">3. What we do not collect</h2>
+<p>The app contains no analytics framework, no crash-reporting service, no advertising library and no tracking SDK of any kind. Specifically, we do not collect:</p>
+<ul>
+  <li>your browsing history, DNS queries, or the contents of your traffic;</li>
+  <li>your VPN server addresses, credentials, or subscription URLs;</li>
+  <li>your name, email address, phone number or any account identifier — there is no account;</li>
+  <li>your device's advertising ID, contacts, location, camera, microphone or files;</li>
+  <li>usage analytics, feature telemetry or crash reports.</li>
+</ul>
+<p><strong>We do not sell, rent or share personal data, because we do not receive any.</strong></p>
+
+<h2 id="third-parties">4. What leaves your device, and to whom</h2>
+<p>The app is a network tool, so it necessarily makes network connections. Every destination below is a third party we do not control, and each necessarily sees your IP address when contacted. None of them receives an identifier issued by us.</p>
+
+<table>
+  <thead><tr><th>Feature</th><th>Where it connects</th><th>What is sent</th><th>Optional?</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Your VPN connection</strong></td>
+      <td>The server, subscription provider or network <em>you</em> configure — including Tor and Psiphon if you select them</td>
+      <td>Your network traffic, as any VPN client would send it. It goes to your chosen provider, never to us.</td>
+      <td>This is the app's purpose</td>
+    </tr>
+    <tr>
+      <td><strong>Subscription updates</strong></td>
+      <td>The subscription URL you entered</td>
+      <td>An HTTP request for the configuration list. The provider sees your IP and the client identifier sent with the request.</td>
+      <td>Yes — only if you add a subscription</td>
+    </tr>
+    <tr>
+      <td><strong>Connection info / country</strong></td>
+      <td>Public IP-lookup services, tried in order: <code>api.ip.sb</code>, <code>ipwho.is</code>, <code>ipapi.co</code>, <code>ifconfig.co</code>, Cloudflare <code>/cdn-cgi/trace</code>. You can substitute your own URL in Settings.</td>
+      <td>A request with no parameters. The service replies with the IP, city and country it sees — which is how the app can show where you appear from.</td>
+      <td>Yes — used by the info card and the map</td>
+    </tr>
+    <tr>
+      <td><strong>Speed test</strong></td>
+      <td><code>speed.cloudflare.com</code></td>
+      <td>Test traffic only. A full run transfers up to roughly 150&nbsp;MB, which counts against your data plan.</td>
+      <td>Yes — only when you start it</td>
+    </tr>
+    <tr>
+      <td><strong>Routing data (geo files)</strong></td>
+      <td>GitHub, from the rule set you select (Loyalsoldier, runetfreedom or Chocolate4U)</td>
+      <td>A file download. The app ships these files and only fetches updates when you ask it to.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><strong>Update check</strong></td>
+      <td>The app's public Google Play listing page</td>
+      <td>A request for the listing, to read the latest published version and its release notes. No identifier is attached.</td>
+      <td>Yes — can be ignored or dismissed</td>
+    </tr>
+    <tr>
+      <td><strong>DNS resolution</strong></td>
+      <td>The resolver you choose in Settings (for example Cloudflare, Google, AdGuard, Quad9 or one you enter)</td>
+      <td>DNS queries, as any DNS client sends them.</td>
+      <td>Configurable</td>
+    </tr>
+    <tr>
+      <td><strong>Tor / pluggable transports</strong></td>
+      <td>The Tor network, its directory authorities, and bridge or Snowflake infrastructure when you enable them</td>
+      <td>Traffic as the Tor protocol defines it.</td>
+      <td>Yes — only if you use Tor</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each third party operates under its own privacy policy. We suggest reviewing the policy of any provider whose server or subscription you use, since that provider — not us — carries your traffic.</p>
+
+<h2 id="permissions">5. Permissions and why each is needed</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why the app requests it</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code></td><td>To make network connections. A VPN client cannot work without it.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>To keep the tunnel running with a visible ongoing notification while you use other apps, as Android requires.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>CHANGE_NETWORK_STATE</code></td><td>To detect connectivity changes and reconnect when the network changes, and to configure the tunnel interface.</td></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code>, <code>POST_PROMOTED_NOTIFICATIONS</code></td><td>To show the connection status notification and its live status chip.</td></tr>
+    <tr>
+      <td><code>QUERY_ALL_PACKAGES</code></td>
+      <td>
+        Used solely by the <strong>per-app proxy</strong> feature, so the app can show you a list of your installed applications and let you choose which of them go through the tunnel.
+        <strong>The list is read on your device, displayed to you, and never transmitted anywhere.</strong> Only the selection you make is saved locally.
+        If you never open that screen, the list is never used.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>The app does <strong>not</strong> request location, contacts, camera, microphone, SMS or storage-wide file access. The VPN connection itself is established through Android's standard system VPN consent dialog, which you must approve.</p>
+
+<h2 id="deviceid">6. Device identifier</h2>
+<p>Settings shows a <strong>Device ID</strong> so you can copy it. This value is Android's <code>ANDROID_ID</code> — an identifier generated by the operating system that is specific to your device and this app's signing key, and that changes on a factory reset.</p>
+<p><strong>The app does not transmit this value anywhere.</strong> It is displayed for one purpose: if someone shares a locked Vault configuration with you and chooses to restrict it to specific devices, they need your Device ID in order to include yours. Sending it to them is an action you take deliberately, outside the app.</p>
+
+<h2 id="security">7. Security, and its honest limits</h2>
+<p>Vault configurations are encrypted with AES-256-GCM. Ordinary configurations and settings are stored in the app's private storage, which Android isolates from other applications.</p>
+<p>We would rather be accurate than reassuring, so:</p>
+<ul>
+  <li><strong>A rooted or compromised device offers no guarantees.</strong> Anything the app can read, software with root access can also read. Vault's device binding is a deterrent against casual re-sharing — it is not DRM, and a technically capable person can work around it.</li>
+  <li><strong>Your privacy depends on your provider.</strong> Whoever operates the server you connect through can see your traffic to the extent the protocol allows. Choose providers you trust.</li>
+  <li><strong>No VPN makes you anonymous.</strong> It changes where your traffic appears to come from; it does not stop you being identified by accounts you sign into, or by your browser.</li>
+  <li><strong>No transmission or storage method is perfectly secure.</strong> We aim for sound practice, not impossible promises.</li>
+</ul>
+
+<h2 id="children">8. Children</h2>
+<p>The app is not directed to children under 13 (or the equivalent minimum age in your jurisdiction). We do not knowingly collect personal information from children — in fact, we do not knowingly collect personal information from anyone, as described above.</p>
+
+<h2 id="rights">9. Your choices and rights</h2>
+<p>Because the app holds no data about you on any server of ours, there is nothing for us to export, correct or delete on your behalf. You remain in full control:</p>
+<ul>
+  <li>Delete any profile, subscription or log from within the app at any time.</li>
+  <li>Uninstalling the app removes all of its data from your device.</li>
+  <li>Optional network features (connection info, speed test, update check, geo downloads) are only used when you invoke them or leave them enabled.</li>
+  <li>For rights concerning data held by a VPN provider, subscription seller or other third party, contact that party directly.</li>
+</ul>
+<p>If you are in the EEA or UK: since we neither collect nor process personal data through the app, we do not act as a controller of your personal data in connection with it.</p>
+
+<h2 id="changes">10. Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published at this address with a new "Last updated" date. Material changes will also be noted in the app's release notes. Continuing to use the app after an update means you accept the revised policy.</p>
+
+<hr>
+
+<h2 id="terms">11. Terms of Service</h2>
+
+<h3>11.1 Acceptance</h3>
+<p>By installing or using ZedSecure VPN you agree to these terms. If you do not agree, do not use the app.</p>
+
+<h3>11.2 What the app is</h3>
+<p>ZedSecure is client software that connects to servers you configure. <strong>We do not provide, operate, endorse or resell VPN servers or subscriptions.</strong> Any server, subscription, gateway or network you use is supplied by a third party and governed by that party's own terms.</p>
+
+<h3>11.3 Licence</h3>
+<p>You are granted a personal, non-exclusive, non-transferable licence to use the app on devices you control. You may not resell the app, present it as your own product, or remove or alter its attributions.</p>
+
+<h3>11.4 Acceptable use</h3>
+<p>You are responsible for how you use the app and for complying with the laws that apply to you. VPN use is restricted or regulated in some jurisdictions; determining what is lawful where you are is your responsibility. Do not use the app to break into systems, distribute malware, harass others, infringe copyright, or commit any other unlawful act.</p>
+
+<h3>11.5 Third-party services and open-source components</h3>
+<p>The app incorporates independent open-source components, each under its own licence — including Xray-core, hev-socks5-tunnel, Tor and its pluggable transports, Psiphon, OpenConnect (LGPL-2.1), AmneziaWG and others. Their licences and attributions are listed in the app. Those projects are not affiliated with Cluvex Studio and do not endorse this app.</p>
+
+<h3>11.6 No warranty</h3>
+<p>The app is provided <strong>"as is" and "as available", without warranty of any kind</strong>, express or implied, including merchantability, fitness for a particular purpose and non-infringement. We do not warrant that connections will be available, uninterrupted, fast, or able to bypass any particular restriction.</p>
+
+<h3>11.7 Limitation of liability</h3>
+<p>To the maximum extent permitted by law, Cluvex Studio is not liable for any indirect, incidental, special, consequential or punitive damages, or for loss of data, profits, revenue or goodwill, arising from your use of or inability to use the app — including any act, omission, outage or data handling by a third-party server, subscription seller or network you choose to use. Nothing here excludes liability that cannot lawfully be excluded.</p>
+
+<h3>11.8 Data charges</h3>
+<p>The app uses your network connection. Features such as the speed test can transfer a substantial amount of data (up to roughly 150&nbsp;MB per run) and may incur charges from your mobile operator. Data usage is shown before you start a test.</p>
+
+<h3>11.9 Availability and changes</h3>
+<p>Features may be added, changed or removed between versions. We may update these terms; the current version is always the one published at this address.</p>
+
+<h3>11.10 Termination</h3>
+<p>You may stop using the app at any time by uninstalling it. These terms cease to apply on uninstallation, except for provisions that by their nature survive (such as the disclaimer of warranty and the limitation of liability).</p>
+
+<h2 id="contact">12. Contact</h2>
+<p>Questions about this policy or these terms:</p>
+<ul>
+  <li>GitHub — <a href="https://github.com/CluvexStudio">github.com/CluvexStudio</a></li>
+  <li>Telegram — <a href="https://t.me/CluvexStudio">t.me/CluvexStudio</a></li>
+</ul>
+
+<footer>
+  <p>ZedSecure VPN is published by Cluvex Studio. This page serves as both the Privacy Policy and the Terms of Service referenced by the app's Google Play listing.</p>
+  <p>Effective 7 September 2026.</p>
+</footer>
+
+</div>
 </body>
 </html>
